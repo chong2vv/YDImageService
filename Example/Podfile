@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'YDImageService_Example' do
+  pod 'YDImageService', :path => '../'
+
+  target 'YDImageService_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
