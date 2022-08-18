@@ -8,6 +8,9 @@
 
 #import "YDViewController.h"
 
+#import <YDImageService/YDWebImageManager.h>
+#import <YDImageService/YDImageService.h>
+
 @interface YDViewController ()
 
 @end

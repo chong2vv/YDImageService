@@ -19,7 +19,7 @@
 #define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak
 
 /// Returns nil in App Extension.
-static UIApplication *_YYSharedApplication() {
+static UIApplication *_YDSharedApplication() {
     static BOOL isAppExtension = NO;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -211,7 +211,7 @@ static UIApplication *_YYSharedApplication() {
 }
 
 + (void)_delaySetActivity:(NSTimer *)timer {
-    UIApplication *app = _YYSharedApplication();
+    UIApplication *app = _YDSharedApplication();
     if (!app) return;
     
     NSNumber *visiable = timer.userInfo;
@@ -222,7 +222,7 @@ static UIApplication *_YYSharedApplication() {
 }
 
 + (void)_changeNetworkActivityCount:(NSInteger)delta {
-    if (!_YYSharedApplication()) return;
+    if (!_YDSharedApplication()) return;
     
     void (^block)(void) = ^{
         _YDWebImageApplicationNetworkIndicatorInfo *info = [self _networkIndicatorInfo];
