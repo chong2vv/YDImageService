@@ -20,7 +20,7 @@ typedef void(^DownloadCompleted)(UIImage *image,NSError *error);
 /**
  设置配置项
 
- @param config 详细见 ArtImageConfigProtocol 协议
+ @param config 详细见 YDImageConfigProtocol 协议
  */
 - (void)resetConfig:(id<YDImageConfigProtocol>)config;
 
@@ -108,7 +108,7 @@ typedef void(^DownloadCompleted)(UIImage *image,NSError *error);
 - (void)clearAllImageDiskOnCompletion:(void(^)(void))clearBlock;
 
 
-#pragma mark - ArtClearCacheProtocol
+#pragma mark - YDClearCacheProtocol
 // 异步清空缓存
 - (void)clearDiskOnCompletion:(void(^)(void))clearBlock;
 

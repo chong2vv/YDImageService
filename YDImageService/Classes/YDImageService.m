@@ -224,7 +224,7 @@
                 }];
             }];
         } else {
-            NSError *error = [NSError errorWithDomain:@"com.msb.artvideowb" code:-1000 userInfo:@{NSLocalizedDescriptionKey:@"相册权限不被允许"}];
+            NSError *error = [NSError errorWithDomain:@"com.yd.app" code:-1000 userInfo:@{NSLocalizedDescriptionKey:@"相册权限不被允许"}];
             completionBlock(nil,error);
         }
     }];
