@@ -108,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				15C5BD7828ADE5BF00E5B1EC /* Classes */,
-				15C5BD7A28ADE5BF00E5B1EC /* Assets */,
 			);
 			name = YDImageService;
 			path = ../YDImageService;
@@ -128,13 +127,6 @@
 				15C5BD8428ADF65800E5B1EC /* YYWebImageOperation+YDNetworkThread.m */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		15C5BD7A28ADE5BF00E5B1EC /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
